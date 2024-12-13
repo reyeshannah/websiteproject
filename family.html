@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hannah Reyes</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <style>
+            .banner {
+                width: 100%;
+                height: 300vh; /* Desired height for the banner */
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center top;
+                position: absolute; /* Remove the banner from normal document flow */
+                top: 0;
+                left: 0;
+                z-index: -1; /* Keep it behind the other content */
+            }
+
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative; /* Ensure the navbar stays in place within the banner */
+            }
+
+            .content {
+                position: relative; /* Keep content in normal flow */
+                margin-top: 110vh; /* Push content below the banner */
+            }
+
+            .family-container {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 60px;
+            }
+
+            .family-item {
+                text-align: center;
+            }
+
+            .family-title {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo.png" class="logo" alt="Logo">
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Community</h1>
+            <p>Family</p>
+            <div class="family-container">
+                <div class="family-item">
+                    <img src="family1.JPG" alt="food1" width="300" height="400">
+                </div>
+                <div class="family-item">
+                    <img src="family2.JPG" alt="food2" width="500" height="400">
+                </div>
+                <div class="family-item">
+                    <img src="family3.jpg" alt="food3" width="300" height="400">
+                </div>
+            </div>
+
+                <p>Friends</p>
+                <div class="family-container">
+                    <div class="family-item">
+                        <img src="friends1.JPG" alt="food1" width="300" height="400">
+                    </div>
+                    <div class="family-item">
+                        <img src="online1.JPG" alt="food2" width="250" height="400">
+                    </div>
+                    <div class="family-item">
+                        <img src="friends2.JPG" alt="food3" width="300" height="400">
+                    </div>
+                </div>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Reyes</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        /* Inline styles for movies and TV shows */
+        .media-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 110px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .media-item {
+            text-align: center;
+        }
+
+        .media-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo">
+            <ul></ul>
+        </div>
+
+        <div class="content">
+            <h1>ENTERTAINMENT</h1>
+            <p>Favorite Music Artists</p>
+
+            <!-- Music Artists -->
+            <div>
+                <p class="summit">John Summit</p>
+                <img src="johnsummit.jpg" class="artist-pic johnsummit" alt="John Summit" width="300">
+                <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/4CfcXnwLf2MUfnjCnqUMvj?utm_source=generator" 
+                        width="40%" height="200" 
+                        frameborder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                </iframe>
+            </div>
+
+            <div>
+                <p class="olivia">Olivia Rodrigo</p>
+                <img src="oliviapic.png" class="artist-pic oliviapic" alt="Olivia Rodrigo" width="300">
+                <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/4ZtFanR9U6ndgddUvNcjcG?utm_source=generator" 
+                        width="40%" height="200" 
+                        frameborder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                </iframe>
+            </div>
+
+            <div>
+                <p class="renee">Renee Rapp</p>
+                <img src="reneepic.jpeg" class="artist-pic reneepic" alt="Renee Rapp" width="300">
+                <iframe style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/1dh5DUke1yHJzIF3Sa7nXC?utm_source=generator" 
+                        width="40%" height="200" 
+                        frameborder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Movies Section -->
+            <p>Favorite Movies</p>
+            <div class="media-container">
+                <div class="media-item">
+                    <img src="interstellar.jpg" alt="Interstellar" width="200" height="300" 
+                         onclick="playTrailer('https://www.youtube.com/watch?v=zSWdZVtXT7E')">
+                    <p class="media-title">Interstellar</p>
+                </div>
+
+                <div class="media-item">
+                    <img src="rogueonepic.jpg" alt="Rogue One" width="200" height="300" 
+                         onclick="playTrailer('https://www.youtube.com/watch?v=frdj1zb9sMY')">
+                    <p class="media-title">Rogue One</p>
+                </div>
+
+                <div class="media-item">
+                    <img src="pitchperfectpic.jpg" alt="Pitch Perfect" width="200" height="300" 
+                         onclick="playTrailer('https://www.youtube.com/watch?v=8dItOM6eYXY')">
+                    <p class="media-title">Pitch Perfect</p>
+                </div>
+
+                <div class="media-item">
+                    <img src="wildrobotpic.jpg" alt="The Wild Robot" width="200" height="300" 
+                         onclick="playTrailer('https://www.youtube.com/watch?v=67vbA5ZJdKQ')">
+                    <p class="media-title">The Wild Robot</p>
+                </div>
+            </div>
+
+            <!-- TV Shows Section -->
+            <p>Favorite TV Shows</p>
+            <div class="media-container">
+                <div class="media-item">
+                    <img src="modernfamilypic.jpg" alt="Modern Family" width="200" height="300">
+                    <p class="media-title">Modern Family</p>
+                </div>
+
+                <div class="media-item">
+                    <img src="haikyuupic.jpg" alt="Haikyuu" width="200" height="300">
+                    <p class="media-title">Haikyuu</p>
+                </div>
+
+                <div class="media-item">
+                    <img src="theofficepic.jpg" alt="The Office" width="200" height="300">
+                    <p class="media-title">The Office</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playTrailer(url) {
+            window.open(url, '_blank'); // Opens the trailer in a new browser tab
+        }
+    </script>
+</body>
+</html>

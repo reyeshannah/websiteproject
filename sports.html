@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hannah Reyes</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <style>
+            .banner {
+                width: 100%;
+                height: 600vh; /* Desired height for the banner */
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center top;
+                position: absolute; /* Remove the banner from normal document flow */
+                top: 0;
+                left: 0;
+                z-index: -1; /* Keep it behind the other content */
+            }
+
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative; /* Ensure the navbar stays in place within the banner */
+            }
+
+            .content {
+                position: relative; /* Keep content in normal flow */
+                margin-top: 270vh; /* Push content below the banner */
+            }
+
+            .bball-container, .vball-container {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 60px;
+            }
+
+            .pball-container {
+            display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 110px;
+            }
+
+            .bball-item, .vball-item, .pball-item {
+                text-align: center;
+            }
+
+            .bball-title, .vball-title, .pball-title {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo.png" class="logo" alt="Logo">
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>SPORTS</h1>
+
+            <p>Middle School Basketball</p>
+            <div class="bball-container">
+                <div class="bball-item">
+                    <img src="bball3.JPG" alt="Season MVP" width="500" height="400">
+                    <p class="bball-title">Season MVP</p>
+                </div>
+                <div class="bball-item">
+                    <img src="bball1.jpg" alt="Free Throw Champion" width="300" height="400">
+                    <p class="bball-title">Free Throw Champion</p>
+                </div>
+                <div class="bball-item">
+                    <img src="bball2.JPG" alt="All-Tournament Team" width="500" height="400">
+                    <p class="bball-title">All-Tournament Team</p>
+                </div>
+            </div>
+
+            <p>High School Basketball</p>
+            <div class="bball-container">
+                <div class="bball-item">
+                    <img src="bball4.JPG" alt="Freshman Varsity" width="500" height="400">
+                    <p class="bball-title">Freshmen Varsity</p>
+                </div>
+            </div>
+
+            <p>Volleyball</p>
+            <div class="vball-container">
+                <div class="vball-item">
+                    <img src="vball1.JPG" alt="Season MVP" width="500" height="400">
+                    <p class="vball-title">Season MVP</p>
+                </div>
+            </div>
+
+            <p>Pickleball</p>
+            <div class="pball-container">
+                <div class="pball-item">
+                    <img src="pickleball1.JPG" alt="First Time" width="300" height="500">
+                    <p class="pball-title">First Time Playing - June</p>
+                </div>
+                <div class="pball-item">
+                    <img src="pickleballgif.gif" alt="Socials" width="300" height="500">
+                    <p class="pball-title">Socials</p>
+                </div>
+                <div class="pball-item">
+                    <img src="pickleball2.JPG" alt="Petit Park" width="300" height="500">
+                    <p class="pball-title">Petit Park, Granada Hills</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

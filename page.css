@@ -1,0 +1,118 @@
+/* Reset and global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    font-family: "Andale Mono", monospace;
+}
+
+body {
+    font-size: 16px; /* Sets a more standard base font size */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Global text color */
+}
+
+.banner {
+    width: 100%;
+    height: 400vh; /* Adjusted for appropriate height */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    position: absolute; /* Positioned relative to .banner */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%);
+    text-align: center;
+    color: #000; /* Ensures good contrast */
+    margin-top: 200vh;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 25px;
+    margin: 20px auto;
+    font-weight: 300; /* Light font-weight for a cleaner look */
+    line-height: 1.8; /* Standardized line height */
+    font-family: Arial, sans-serif;
+    max-width: 600px; /* Limits paragraph width for readability */
+    color: #000; /* Softer color for paragraph text */
+}
+
+/* Styling for artist sections */
+.artist-pic {
+    float: left;
+    position: relative;
+    margin-left: 200px;
+}
+
+.artist-name {
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 300px; /* Align text with image */
+    position: relative; /* Enable vertical positioning */
+    top: -110px; /* Move text up for alignment */
+}
+
+/* Unified hover effects */
+.artist-pic:hover,
+.movie-item img:hover,
+.tvshow-item img:hover {
+    transform: scale(1.3); /* Ensure consistency in scale */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* iframe styling */
+iframe {
+    margin: 75px 0 0 300px;
+    border-radius: 12px;
+}
+
+/* Resetting default margins and paddings */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Bring content closer to the top */
+.banner {
+    padding: 10px 20px; /* Reduce padding */
+    margin: 0; /* Remove any extra margin */
+    height: 700vh;
+}
+
+.content {
+    padding: 20px 10px; /* Reduce padding around the content */
+    margin: 0 auto; /* Center content if needed */
+    margin-top: -90vh;
+}
+
+/* Optional: Adjust space between sections */
+.content h1, .content p {
+    margin-top: 190px; /* Minimize top margin */
+    margin-bottom: 10px; /* Minimize bottom margin */
+}

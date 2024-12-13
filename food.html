@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hannah Reyes</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <style>
+            .banner {
+                width: 100%;
+                height: 600vh; /* Desired height for the banner */
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center top;
+                position: absolute; /* Remove the banner from normal document flow */
+                top: 0;
+                left: 0;
+                z-index: -1; /* Keep it behind the other content */
+            }
+
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative; /* Ensure the navbar stays in place within the banner */
+            }
+
+            .content {
+                position: relative; /* Keep content in normal flow */
+                margin-top: 285vh; /* Push content below the banner */
+            }
+
+            .cooked-container, .food-container {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 60px;
+            }
+
+            .cooked-item, .food-item {
+                text-align: center;
+            }
+
+            .cooked-title, .food-title {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo.png" class="logo" alt="Logo">
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Foods</h1>
+            <p>Favorite Foods</p>
+            <div class="food-container">
+                <div class="food-item">
+                    <img src="food1.jpg" alt="food1" width="300" height="400">
+                    <p class="food-title">Sushi</p>
+                </div>
+                <div class="food-item">
+                    <img src="food2.jpg" alt="food2" width="500" height="400">
+                    <p class="food-title">Korean BBQ</p>
+                </div>
+                <div class="food-item">
+                    <img src="food3.jpg" alt="food3" width="300" height="400">
+                    <p class="food-title">Hotpot</p>
+                </div>
+            </div>
+
+            <p>More Favorite Foods</p>
+            <div class="food-container">
+                <div class="food-item">
+                    <img src="food4.JPG" alt="food4" width="300" height="450">
+                    <p class="food-title">More Sushi</p>
+                </div>
+                <div class="food-item">
+                    <img src="food6.JPG" alt="food6" width="700" height="400">
+                    <p class="food-title">Korean Cuisine</p>
+                </div>
+                <div class="food-item">
+                    <img src="food5.jpg" alt="food5" width="300" height="450">
+                    <p class="food-title">Seafood</p>
+                </div>
+            </div>
+
+            <p>Food I've Cooked</p>
+            <div class="cooked-container">
+                <div class="cooked-item">
+                    <img src="cooked2.jpg" alt="cooked2" width="300" height="450">
+                    <p class="cooked-title">Burrito Bowl</p>
+                </div>
+                <div class="cooked-item">
+                    <img src="cooked1.jpg" alt="cooked1" width="500" height="400">
+                    <p class="cooked-title">Kimchi Soup & Galbi</p>
+                </div>
+                <div class="cooked-item">
+                    <img src="cooked3.jpg" alt="cooked3" width="300" height="450">
+                    <p class="cooked-title">Breakfast</p>
+                </div>
+            </div>
+
+            <p>More Food I've Cooked</p>
+            <div class="cooked-container">
+                <div class="cooked-item">
+                    <img src="cooked4.jpg" alt="cooked2" width="350" height="500">
+                    <p class="cooked-title">Beef and Veggies</p>
+                </div>
+                <div class="cooked-item">
+                    <img src="cooked5.JPG" alt="cooked1" width="325" height="525">
+                    <p class="cooked-title">Spicy Mayo Chicken</p>
+                </div>
+                <div class="cooked-item">
+                    <img src="cooked6.JPG" alt="cooked3" width="325" height="500">
+                    <p class="cooked-title">Honey Garlic Salmon</p>
+        </div>
+    </body>
+</html>
